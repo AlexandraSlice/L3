@@ -1,0 +1,294 @@
+.container {
+min-width: 320px;
+margin: 0px auto;
+}
+
+.menu {
+display: flex;
+justify-content: space-around;
+flex-wrap: nowrap;
+}
+
+.menu__title{
+display: none;
+}
+
+.nav {
+font-size: 36px;
+}
+
+.menu-img {
+width: 40px;
+height: 40px;
+background-repeat: no-repeat;
+margin: 3%;
+
+}
+
+.burger {
+background-image: url("burger.svg");
+}
+ 
+.call {
+background-image: url("call.svg");
+display: none;
+}
+
+.chat {
+background-image: url("chat.svg");
+display: none;
+}
+
+.checkstatus {
+background-image: url("checkstatus.svg");
+
+}
+
+.Group {
+background-image: url("Group.svg");
+width: 100px;
+height: 60px;
+margin-right: 6%;
+}
+
+.profile {
+background-image: url("profile.svg");
+display: none;
+}
+
+.repair {
+background-image: url("repair.svg");
+} 
+
+.Group::after {
+content: "";
+width: 40px;
+position: absolute;
+height: 1px;
+background-color: grey;
+transform: rotate(90deg) translate(25px, -90px);
+}
+
+.title {
+margin: 6% 3%;
+}
+
+.Scroll-box {
+display: flex;
+overflow: scroll;
+flex-wrap: nowrap;
+gap: 10%;
+margin: 6% 3%;
+
+}
+
+.description__text_text {
+margin: 6% 3%;
+}
+
+.description__text_next {
+margin: 6% 3%;
+}
+
+.description__picture_picture {
+width: 100%
+}
+
+.additional-text{
+display: none;
+}
+
+@media (min-width: 768px) {
+.container {
+min-width: 768px;
+margin: 0px auto;
+}
+
+.burger {
+background-image: url("burger.svg");
+order: 1;
+}
+ 
+.call {
+background-image: url("call.svg");
+display: initial;
+order: 3;
+}
+
+.chat {
+background-image: url("chat.svg");
+display: initial;
+order: 4;
+}
+
+.checkstatus {
+background-image: url("checkstatus.svg");
+order: 7;
+}
+
+.Group {
+background-image: url("Group.svg");
+width: 100px;
+height: 60px;
+order: 2;
+}
+
+.profile {
+background-image: url("profile.svg");
+display: initial;
+order: 5;
+}
+
+.repair {
+background-image: url("repair.svg");
+order: 6;
+} 
+
+.Group::after {
+content: "";
+width: 40px;
+position: absolute;
+height: 1px;
+background-color: grey;
+transform: rotate(90deg) translate(25px, 3em);
+}
+
+.repair::after {
+content: "";
+width: 40px;
+position: absolute;
+height: 1px;
+background-color: grey;
+transform: rotate(90deg) translate(25px, 3em);
+}
+
+.description {
+display: flex;
+
+}
+
+.description__text {
+align-items: flex-start;
+margin-top: 0;
+flex: 1 1 50%;
+}
+
+.description__picture {
+flex: 1 1 50%;
+}
+
+.description__text_text {
+margin-top: 0;
+}
+
+
+
+
+}
+
+@media (min-width: 1120px) {
+
+.container {
+max-width: 100%;
+margin: 0px auto;
+}
+
+.burger {
+background-image: url("burger.svg");
+display: none;
+}
+ 
+.call {
+background-image: url("call.svg");
+display: initial;
+display: none;
+}
+
+.chat {
+background-image: url("chat.svg");
+display: initial;
+display: none;
+}
+
+.checkstatus {
+background-image: url("checkstatus.svg");
+display: none;
+}
+
+.Group {
+background-image: url("Group.svg");
+width: 100px;
+height: 60px;
+display: none;
+}
+
+.profile {
+background-image: url("profile.svg");
+display: initial;
+order: 2;
+}
+
+.repair {
+background-image: url("repair.svg");
+order: 4;
+} 
+
+.request{
+order: 1;
+flex-wrap: nowrap;
+flex-basis: 150px;
+margin-right: 0;
+
+}
+
+.fix{
+order: 3;
+flex-wrap: nowrap;
+flex-basis: 150px;
+margin-right: 0;
+}
+
+
+.repair::after {
+display: none;
+}
+
+.additional-text{
+display: initial;
+}
+
+.menu {
+justify-content: end;
+}
+
+.menu-img {
+flex-basis: content;
+margin-left: 0;
+
+}
+
+.profile::after {
+content: "ddddd";
+visibility: hidden;
+}
+
+.repair::before {
+content: "ddddd";
+visibility: hidden;
+}
+
+.menu__title{
+display: initial;
+position: absolute;
+top: 10px; left: 40px;
+width: 300px;
+font-size: 30px;
+font-weight: bold;
+
+
+}
+
+.title{
+display: none;
+}
+}
